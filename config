@@ -22,7 +22,7 @@ workspace_layout default
 
 
 # Set inner/outer gaps
-gaps inner 5
+gaps inner 7
 gaps outer 0
 
 #do not show titlebar on windows: 
@@ -58,7 +58,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal:
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window:
 bindsym $mod+q kill
@@ -138,8 +138,8 @@ set $ws10 "10: "
 #bindsym $mod+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
 # autostart start applications + bind program to workspace:
-#assign [class="Xfce4-terminal"] $ws1
-#for_window [class=Xfce4-terminal] focus
+#assign [class="alacritty"] $ws1
+#for_window [class=alacritty] focus
 #assign [class="(?i)firefox"] $ws2
 #for_window [class=(?i)firefox] focus
 #assign [class="Thunar"] $ws3
@@ -151,7 +151,7 @@ set $ws10 "10: "
 
 # Autostart apps:
 exec --no-startup-id gammy
-#exec --no-startup-id sleep 2 && xfce4-terminal
+#exec --no-startup-id sleep 2 && alacritty
 #exec --no-startup-id firefox
 #exec --no-startup-id sleep 3 && thunar
 #exec --no-startup-id blueberry-tray
