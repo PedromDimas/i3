@@ -58,7 +58,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal:
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id xfce4-terminal
 
 # kill focused window:
 bindsym $mod+q kill
@@ -138,7 +138,7 @@ set $ws10 "10: "
 #bindsym $mod+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
 # autostart start applications + bind program to workspace:
-#assign [class="alacritty"] $ws1
+#assign [class="xfce4-terminal"] $ws1
 #for_window [class=alacritty] focus
 #assign [class="(?i)firefox"] $ws2
 #for_window [class=(?i)firefox] focus
