@@ -58,7 +58,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal:
-bindsym $mod+Return exec --no-startup-id xfce4-terminal
+bindsym $mod+shift+Return exec --no-startup-id xfce4-terminal
 
 # kill focused window:
 bindsym $mod+q kill
@@ -80,9 +80,7 @@ bindsym $mod+u focus up
 bindsym $mod+ntilde focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+bindsym $mod+Left focus left bindsym $mod+Down focus down bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window:
